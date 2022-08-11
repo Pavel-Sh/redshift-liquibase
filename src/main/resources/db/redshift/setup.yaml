@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: testLiquibase
+      author: pavel
+      changes:
+        - sqlFile:
+            dbms: redshift
+            encoding: utf8
+            path: init/test-liquibase.sql
+            relativeToChangelogFile: true
